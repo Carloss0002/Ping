@@ -7,7 +7,7 @@ function validate(){
        res.innerHTML = `<p><small>*Formatação de Email inválida</small></p>`
     }
     if(validar.value.indexOf('.com') == -1){
-         res.innerHTML = `<p><small>*Formatação de Email inválida adicione .com</small></p>`
+         res.innerHTML += `<p><small>*Formatação de Email inválida adicione .com</small></p>`
     }
     if(validar.value == ''){
         res.innerHTML += '<p><small>*Campo Necessario Vazio</small></p>'
